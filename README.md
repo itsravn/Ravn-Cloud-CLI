@@ -19,13 +19,11 @@ curl -sL [https://cli.ravn.dev/install.sh](https://cli.ravn.dev/install.sh) | ba
 💻 Usage Examples
 1. Deploy a new instance:
 
-Bash
 
 ravn deploy --name lobby-01 --version 1.20.4 --ram 4G --port 25565
 # Output: [SUCCESS] Container 'ravn-lobby-01' started (ID: a1b2c3d)
 2. Check network status:
 
-Bash
 
 ravn status --all
 # Output:
@@ -33,20 +31,18 @@ ravn status --all
 # 🔴 survival-1 [DOWN]  (Exit Code 1)
 3. View live logs:
 
-Bash
 
 ravn logs --follow lobby-01
 4. Execute remote command:
 
-Bash
 
 ravn exec lobby-01 "say Server restarting in 10 seconds!"
 ⚙️ Configuration
 The CLI automatically generates a ravn-config.yml in your home directory for managing Docker socket paths and default memory allocations.
 
-YAML
 
 docker-socket: /var/run/docker.sock
 default-memory: 2G
 auto-restart: true
 © 2026 Ravn Studios. DevOps Division.
+
